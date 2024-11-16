@@ -27,13 +27,13 @@ body {
 
 
 a, .uk-link {
-color: #AD9A00;
+color: #000000;
 text-decoration: none;
 cursor: pointer;
 }
 
 .uk-link {
-  color: #AD9A00;
+  color: #000000;
   text-decoration: none;
   cursor: pointer;
 }
@@ -41,7 +41,7 @@ cursor: pointer;
 a:hover,
 .uk-link:hover,
 .uk-link-toggle:hover .uk-link {
-  color: #AD9A00;
+  color: #000000;
   text-decoration: underline;
 }
 
@@ -52,7 +52,7 @@ a:hover,
 a.uk-link-heading:hover,
 .uk-link-heading a:hover,
 .uk-link-toggle:hover .uk-link-heading {
-  color: #AD9A00;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -61,7 +61,7 @@ a.uk-link-heading:hover,
  ========================================================================== */
 
 .uk-icon-button {
-  background: #AD9A00;
+  background: #000000;
   color: #fff;
 }
 
@@ -72,7 +72,7 @@ a.uk-link-heading:hover,
 
 .uk-icon-button:active,
 .uk-active > .uk-icon-button {
-  background-color: #AD9A00;
+  background-color: #000000;
   color: #fff;
 }
 
@@ -82,53 +82,53 @@ a.uk-link-heading:hover,
   outline: none;
   background-color: #fff;
   color: #000;
-  border-color: #AD9A00;
+  border-color: #000000;
 }
 
 .uk-radio:focus,
 .uk-checkbox:focus {
   background-color: rgba(0, 0, 0, 0);
   outline: none;
-  border-color: #AD9A00;
+  border-color: #000000;
 }
 
 .uk-radio:checked,
 .uk-checkbox:checked,
 .uk-checkbox:indeterminate {
-  background-color: #AD9A00;
+  background-color: #000000;
   border-color: transparent;
 }
 
 .uk-radio:checked:focus,
 .uk-checkbox:checked:focus,
 .uk-checkbox:indeterminate:focus {
-  background-color: #AD9A00;
+  background-color: #000000;
 }
 
 .uk-radio:disabled,
 .uk-checkbox:disabled {
-  background-color: #AD9A00;
-  border-color: #AD9A00;
+  background-color: #000000;
+  border-color: #000000;
 }
 
 .uk-light .uk-button-secondary, .uk-section-primary:not(.uk-preserve-color) .uk-button-secondary, .uk-section-secondary:not(.uk-preserve-color) .uk-button-secondary, .uk-tile-primary:not(.uk-preserve-color) .uk-button-secondary, .uk-tile-secondary:not(.uk-preserve-color) .uk-button-secondary, .uk-card-primary.uk-card-body .uk-button-secondary, .uk-card-primary > :not([class*='uk-card-media']) .uk-button-secondary, .uk-card-secondary.uk-card-body .uk-button-secondary, .uk-card-secondary > :not([class*='uk-card-media']) .uk-button-secondary, .uk-overlay-primary .uk-button-secondary, .uk-offcanvas-bar .uk-button-secondary {
-background-color: #AD9A00;
+background-color: #000000;
 color: #fff;
 }
 
 .uk-button-primary:hover {
   background-color: #fff;
-  color: #AD9A00;
+  color: #000000;
 }
 
 .uk-button-primary:active,
 .uk-button-primary.uk-active {
-  background-color: #AD9A00;
+  background-color: #000000;
   color: #fff;
 }
 
 .uk-button-primary {
-  background-color: #AD9A00;
+  background-color: #000000;
   color: #fff;
   border: 1px solid transparent;
 }
@@ -145,7 +145,7 @@ color: #fff;
 }
 
 .uk-button-secondary {
-  background-color: #AD9A00;
+  background-color: #000000;
   color: #fff;
 }
 
@@ -156,14 +156,14 @@ color: #fff;
 
 .uk-button-secondary:active,
 .uk-button-secondary.uk-active {
-  background-color: #AD9A00;
+  background-color: #000000;
   color: #fff;
 }
 
 .uk-button-danger {
   background-color: transparent;
-  color: #AD9A00;
-  border: 1px solid #AD9A00;
+  color: #000000;
+  border: 1px solid #000000;
 }
 
 .uk-button-danger:hover {
@@ -175,21 +175,21 @@ color: #fff;
 .uk-button-danger:active,
 .uk-button-danger.uk-active {
   background-color: transparent;
-  color: #AD9A00;
-  border: 1px solid #AD9A00;
+  color: #000000;
+  border: 1px solid #000000;
 }
 
 .uk-progress::-webkit-progress-value {
-  background-color: #AD9A00;
+  background-color: #000000;
   transition: width 0.6s ease;
 }
 .uk-progress::-moz-progress-bar {
-  background-color: #AD9A00;
+  background-color: #000000;
   transition: width 0.6s ease;
 }
 
 .uk-section-primary {
-  background: #AD9A00;
+  background: #000000;
 }
 
 .uk-section-secondary {
@@ -197,41 +197,41 @@ color: #fff;
 }
 
 .uk-tile-primary {
-  background-color: #AD9A00;
+  background-color: #000000;
 }
 
 .uk-card-badge {
-  background: #AD9A00;
+  background: #000000;
   color: #fff;
   text-transform: uppercase;
 }
 
 .uk-card-primary {
-  background-color: #AD9A00;
+  background-color: #000000;
   color: #fff;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
 .uk-card-primary.uk-card-hover:hover {
-  background-color: #AD9A00;
+  background-color: #000000;
   box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16);
 }
 
 .uk-badge {
-  background: #AD9A00;
+  background: #000000;
   color: #fff !important;
   font-size: 11px;
 }
 
 .uk-label {
-  background: #AD9A00;
+  background: #000000;
   color: #fff;
   text-transform: uppercase;
 }
 
 .uk-navbar-nav > li > a {
   padding: 0 0;
-  color: #AD9A00;
+  color: #000000;
   text-transform: uppercase;
   transition: 0.1s ease-in-out;
   transition-property: color, background-color;
@@ -244,11 +244,11 @@ color: #fff;
 }
 
 .uk-navbar-nav > li > a:active {
-  color: #AD9A00;
+  color: #000000;
 }
 
 .uk-navbar-nav > li.uk-active > a {
-  color: #AD9A00;
+  color: #000000;
   text-decoration:overline;
 }
 
@@ -259,7 +259,7 @@ color: #fff;
 
 .uk-tab > .uk-active > a {
   color: #333;
-  border-color: #AD9A00;
+  border-color: #000000;
 }
 
 .uk-background-default {
@@ -269,7 +269,7 @@ color: #fff;
   background-color: #FFFFFF;
 }
 .uk-background-primary {
-  background-color: #AD9A00;
+  background-color: #000000;
 }
 .uk-background-secondary {
   background-color: #000;
@@ -292,7 +292,7 @@ color: #fff;
   /* 5 */
   background: #fff;
   border-radius: 15px;
-  color: #AD9A00;
+  color: #000000;
   font-size: 12px;
 }
 
