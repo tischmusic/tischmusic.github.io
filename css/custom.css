@@ -1,0 +1,386 @@
+
+/* ========================================================================
+   Base
+ ========================================================================== */
+/*
+
+html {
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+
+  -webkit-text-size-adjust: 100%;
+
+  background: #fff;
+  color: #000;
+}
+
+body {
+  margin: 0;
+}
+
+/* ========================================================================
+   Links
+ ========================================================================== */
+
+
+a, .uk-link {
+color: #AD9A00;
+text-decoration: none;
+cursor: pointer;
+}
+
+.uk-link {
+  color: #AD9A00;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover,
+.uk-link:hover,
+.uk-link-toggle:hover .uk-link {
+  color: #AD9A00;
+  text-decoration: underline;
+}
+
+  color: #000;
+  text-decoration: none;
+}
+
+a.uk-link-heading:hover,
+.uk-link-heading a:hover,
+.uk-link-toggle:hover .uk-link-heading {
+  color: #AD9A00;
+  text-decoration: none;
+}
+
+/* ========================================================================
+   Style modifiers
+ ========================================================================== */
+
+.uk-icon-button {
+  background: #AD9A00;
+  color: #fff;
+}
+
+.uk-icon-button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.uk-icon-button:active,
+.uk-active > .uk-icon-button {
+  background-color: #AD9A00;
+  color: #fff;
+}
+
+.uk-input:focus,
+.uk-select:focus,
+.uk-textarea:focus {
+  outline: none;
+  background-color: #fff;
+  color: #000;
+  border-color: #AD9A00;
+}
+
+.uk-radio:focus,
+.uk-checkbox:focus {
+  background-color: rgba(0, 0, 0, 0);
+  outline: none;
+  border-color: #AD9A00;
+}
+
+.uk-radio:checked,
+.uk-checkbox:checked,
+.uk-checkbox:indeterminate {
+  background-color: #AD9A00;
+  border-color: transparent;
+}
+
+.uk-radio:checked:focus,
+.uk-checkbox:checked:focus,
+.uk-checkbox:indeterminate:focus {
+  background-color: #AD9A00;
+}
+
+.uk-radio:disabled,
+.uk-checkbox:disabled {
+  background-color: #AD9A00;
+  border-color: #AD9A00;
+}
+
+.uk-light .uk-button-secondary, .uk-section-primary:not(.uk-preserve-color) .uk-button-secondary, .uk-section-secondary:not(.uk-preserve-color) .uk-button-secondary, .uk-tile-primary:not(.uk-preserve-color) .uk-button-secondary, .uk-tile-secondary:not(.uk-preserve-color) .uk-button-secondary, .uk-card-primary.uk-card-body .uk-button-secondary, .uk-card-primary > :not([class*='uk-card-media']) .uk-button-secondary, .uk-card-secondary.uk-card-body .uk-button-secondary, .uk-card-secondary > :not([class*='uk-card-media']) .uk-button-secondary, .uk-overlay-primary .uk-button-secondary, .uk-offcanvas-bar .uk-button-secondary {
+background-color: #AD9A00;
+color: #fff;
+}
+
+.uk-button-primary:hover {
+  background-color: #fff;
+  color: #AD9A00;
+}
+
+.uk-button-primary:active,
+.uk-button-primary.uk-active {
+  background-color: #AD9A00;
+  color: #fff;
+}
+
+.uk-button-primary {
+  background-color: #AD9A00;
+  color: #fff;
+  border: 1px solid transparent;
+}
+
+.uk-button-primary:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.uk-button-primary:active,
+.uk-button-primary.uk-active {
+  background-color: #000;
+  color: #fff;
+}
+
+.uk-button-secondary {
+  background-color: #AD9A00;
+  color: #fff;
+}
+
+.uk-button-secondary:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.uk-button-secondary:active,
+.uk-button-secondary.uk-active {
+  background-color: #AD9A00;
+  color: #fff;
+}
+
+.uk-button-danger {
+  background-color: transparent;
+  color: #AD9A00;
+  border: 1px solid #AD9A00;
+}
+
+.uk-button-danger:hover {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
+}
+
+.uk-button-danger:active,
+.uk-button-danger.uk-active {
+  background-color: transparent;
+  color: #AD9A00;
+  border: 1px solid #AD9A00;
+}
+
+.uk-progress::-webkit-progress-value {
+  background-color: #AD9A00;
+  transition: width 0.6s ease;
+}
+.uk-progress::-moz-progress-bar {
+  background-color: #AD9A00;
+  transition: width 0.6s ease;
+}
+
+.uk-section-primary {
+  background: #AD9A00;
+}
+
+.uk-section-secondary {
+  background: #000;
+}
+
+.uk-tile-primary {
+  background-color: #AD9A00;
+}
+
+.uk-card-badge {
+  background: #AD9A00;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.uk-card-primary {
+  background-color: #AD9A00;
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.uk-card-primary.uk-card-hover:hover {
+  background-color: #AD9A00;
+  box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16);
+}
+
+.uk-badge {
+  background: #AD9A00;
+  color: #fff !important;
+  font-size: 11px;
+}
+
+.uk-label {
+  background: #AD9A00;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.uk-navbar-nav > li > a {
+  padding: 0 0;
+  color: #AD9A00;
+  text-transform: uppercase;
+  transition: 0.1s ease-in-out;
+  transition-property: color, background-color;
+}
+
+.uk-navbar-nav > li:hover > a,
+.uk-navbar-nav > li > a[aria-expanded="true"] {
+  color: #000;
+  text-decoration:underline;
+}
+
+.uk-navbar-nav > li > a:active {
+  color: #AD9A00;
+}
+
+.uk-navbar-nav > li.uk-active > a {
+  color: #AD9A00;
+  text-decoration:overline;
+}
+
+.uk-tab > * > a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.uk-tab > .uk-active > a {
+  color: #333;
+  border-color: #AD9A00;
+}
+
+.uk-background-default {
+  background-color: #fff;
+}
+.uk-background-muted {
+  background-color: #FFFFFF;
+}
+.uk-background-primary {
+  background-color: #AD9A00;
+}
+.uk-background-secondary {
+  background-color: #000;
+}
+
+.uk-tooltip {
+  /* 1 */
+  display: none;
+  /* 2 */
+  position: absolute;
+  z-index: 1030;
+  --uk-position-offset: 10px;
+  --uk-position-viewport-offset: 10;
+  /* 3 */
+  top: 0;
+  /* 4 */
+  box-sizing: border-box;
+  max-width: 200px;
+  padding: 6px 12px;
+  /* 5 */
+  background: #fff;
+  border-radius: 15px;
+  color: #AD9A00;
+  font-size: 12px;
+}
+
+.uk-border-rounded {
+  border-radius: 15px;
+}
+
+/* ========================================================================
+   Lightbox
+ ========================================================================== */
+
+.uk-lightbox-button {
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 0.7);
+  border-radius: 100%;
+  /* 1 */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.uk-lightbox-iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.uk-lightbox-toolbar {
+  padding: 10px 10px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.7);
+}
+.uk-lightbox-toolbar > * {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.uk-lightbox-toolbar-icon {
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 0.7);
+  border-radius: 100%;
+  /* 1 */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* ========================================================================
+   Slider
+ ========================================================================== */
+
+.uk-slidenav {
+  padding: 5px 10px;
+  color: rgba(102, 102, 102, 0.5);
+  transition: color 0.1s ease-in-out;
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 0.7);
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+/* ========================================================================
+   Additional CSS:
+ ========================================================================== */
+
+.gumroad .cart-button {
+    display: none !important;
+}
+
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+button:focus,
+button:active {
+	-moz-outline: 0 !important;
+	-ms-outline:0 !important;
+	-o-outline: 0 !important;
+	-webkit-outline: 0 !important;
+}
