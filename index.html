@@ -16,44 +16,48 @@
         <script src="./js/uikit-icons.js"></script>
         <style>
             /* Full viewport height for body, no scrolling */
-            body,
-            html {
-                height: 100vh;
-                overflow: hidden;
-                background-color: transparent;
-                color: #ffffff;
-                margin: 0;
-                padding: 0;
-            }
+body,
+html {
+    height: 100vh;
+    overflow: hidden;
+    background-color: transparent;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
 
-            .cta-button {
-                position: fixed;
-                bottom: 30px;
-                left: 50%;
-                transform: translateX(-50%);
-                z-index: 1000;
-            }
+.cta-button {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
 
-            .video-background {
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                z-index: -1;
-            }
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
 
-            .uk-container {
-                position: relative;
-                z-index: 1;
-                height: 100%;
-                /* Match viewport height */
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-            }
+.uk-container {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
+/* Desktop-specific centering */
+@media (min-width: 1024px) {
+    .uk-container {
+        justify-content: center; /* Vertically center only on desktop */
+    }
+}
             .social-buttons {
                 display: flex;
                 gap: 10px;
