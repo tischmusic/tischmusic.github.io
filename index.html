@@ -15,7 +15,6 @@
         <script src="./js/uikit.js"></script>
         <script src="./js/uikit-icons.js"></script>
         <style>
-            /* Full viewport height for body, no scrolling */
 body,
 html {
     height: 100vh;
@@ -66,43 +65,44 @@ html {
             }
 
             .social-buttons .btn {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 50px;
-                height: 50px;
-                color: white;
-                font-size: 24px;
-                border-radius: 50%;
-                text-decoration: none;
-                transition: transform 0.2s;
-            }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-size: 24px;
+    border-radius: 50%;
+    text-decoration: none;
+    background-color: black;
+    transition: transform 0.2s, background-color 0.2s, color 0.2s;
+}
 
-            .social-buttons .btn:hover {
-                transform: scale(1.1);
-            }
+.social-buttons .btn:hover {
+    transform: scale(1.1);
+}
 
-            /* Brand colors */
-            .spotify {
-                background-color: #1DB954;
-            }
+/* Hover brand colors */
+.social-buttons .btn.spotify:hover {
+    background-color: #1DB954;
+}
 
-            .apple-music {
-                background-color: #000000;
-            }
+.social-buttons .btn.apple-music:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
 
-            .amazon-music {
-                background-color: #FF9900;
-            }
+.social-buttons .btn.amazon-music:hover {
+    background-color: #FF9900;
+}
 
-            .youtube {
-                background-color: #FF0000;
-            }
+.social-buttons .btn.youtube:hover {
+    background-color: #FF0000;
+}
 
-            .soundcloud {
-                background-color: #FF5500;
-            }
-
+.social-buttons .btn.soundcloud:hover {
+    background-color: #FF5500;
+}
             /* Rounded container with scrollable content */
             .rounded-container {
                 background-color: #ffffff;
@@ -398,10 +398,10 @@ html {
         <div class="uk-container">
             <!-- Header Section -->
             <header class="uk-text-center">
-                <h1 class="uk-heading-xlarge uk-text-thin uk-animation-slide-top uk-padding-small uk-remove-padding-bottom" style="color: white;">TISCH</h1>
+                <h1 class="uk-heading-xlarge uk-text-thin uk-animation-slide-top uk-padding-small uk-remove-padding-bottom" style="color: white;">TISCH<sup><span class="uk-badge">Music</span></sup></h1>
             </header>
             <!-- Rounded Div and Tabs -->
-            <section style="opacity: 0.8;">
+            <section style="opacity: 0.9">
                 <div class="rounded-container uk-animation-scale-up">
                     <!-- UIkit Tabs Component -->
                     <ul uk-tab class="uk-flex-center uk-text-large uk-text-lighter sticky-tab" style="top: -20px;">
@@ -422,7 +422,7 @@ html {
                         </li>
                     </ul>
                     <!-- Tab Content -->
-                    <ul class="uk-switcher uk-margin uk-text-lighter">
+                    <ul class="uk-switcher uk-margin uk-text-lighter" swiping="false">
                         <li>
                             <!-- Centered iframe for music -->
                             <p class="uk-text-justify uk-padding-small">Listen to the latest album from <strong>TISCH</strong>, produced by <strong>Chris Weil</strong>, featuring the hit track 
@@ -430,11 +430,14 @@ html {
                             <div class="iframe-container">
                                 <iframe src="https://bandcamp.com/EmbeddedPlayer/album=2885787040/size=large/bgcol=ffffff/linkcol=000000/artwork=small/transparent=true/" seamless></iframe>
                             </div>
-                            <p class="uk-text-center uk-text-small uk-padding-small">© TISCH Music</p>
+                            <p class="uk-text-center uk-text-small uk-padding-small">© TISCH Music<br><br><br><br></p><p class="uk-hidden@m"><br><br><br><br></p>
                         </li>
                         <li>
                             <div class="uk-flex uk-flex-center uk-padding-small">
                                 <ul class="uk-list uk-list-divider">
+                                    <li>
+                                    <img src="./images/tisch.webp" width="200px" height="200px"/>
+				    </li>
                                     <li>
                                         <strong>Album: 255 255 255 (2018)</strong>
                                         <ul class="uk-list uk-list-divider">
